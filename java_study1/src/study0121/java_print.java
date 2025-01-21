@@ -36,6 +36,8 @@ public class java_print {
 		System.out.printf("%-4d\n", num); // 앞에서부터 4개숫자 정렬
 		System.out.printf("%4d\n", num); // 뒤에서부터 4개숫자 정렬
 		
+		
+		
 	}
 
 }
