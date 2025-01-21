@@ -18,6 +18,8 @@ public class project0120 {
 		
 		int tf = ta+to; // (total fruits)
 		
+		System.out.println("사과 총 갯수 : "+ ta);
+		System.out.println("오랜지 총 갯수 : "+ to);
 		System.out.println("총 과일 갯수 : "+ tf);
 		
 			
