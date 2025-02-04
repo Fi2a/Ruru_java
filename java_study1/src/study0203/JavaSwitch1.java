@@ -68,23 +68,53 @@ public class JavaSwitch1 {
 		}
 		
 		
+		
+		
 /*
- 		과제 2월 3일
- 		
- 		가위바위보 게임 만들기
- 		1. 가위 2. 바위 3. 보
- 		컴퓨터와 승패무 표시
- */		
-		
-		int com = 0, user = 0 ;
-		Scanner scan = new Scanner(System.in);
-		System.out.print("1. 가위 2. 바위 3. 보 : ");
-		user = scan.nextInt();
-		com = (int)(Math.random()*3+1);
-		
-		if() {
-			
-		}
+	       과제 2월 3일
+	       
+	       가위바위보 게임 만들기
+	       1. 가위 2. 바위 3. 보
+	       컴퓨터와 승패무 표시
+*/      
+	      int com = 0, user = 0 ;
+	      Scanner scan = new Scanner(System.in);
+	      System.out.print("1. 가위 2. 바위 3. 보 : ");
+	      user = scan.nextInt();
+	      com = (int)(Math.random()*3+1);
+
+	      switch ( user - com ) {
+	      	case 0 : System.out.println("무승부");
+	      	break;
+	      	case -2 :	      	
+	      	case 1 : System.out.println("승리");
+	      	break;
+	      	case 2 : 
+	      	case -1 : System.out.println("패배");
+	      	break;
+	      }
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+//	      int result = user - com;
+////	      userWin = -2, 1
+////	      userDraw = 0
+////	      userLose = 2, -1
+//	      
+//	      if(result == -2 || result == 1) {
+//	         System.out.println("유저 승리");
+//	      }
+//	      if(result == 0) {
+//	         System.out.println("무승부");
+//	      }
+//	      if(result == 2 || result == -1) {
+//	         System.out.println("유저 패배");
+//	      }
+	   
 		
 		
 		
