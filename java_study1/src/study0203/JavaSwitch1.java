@@ -82,7 +82,15 @@ public class JavaSwitch1 {
 	      System.out.print("1. 가위 2. 바위 3. 보 : ");
 	      user = scan.nextInt();
 	      com = (int)(Math.random()*3+1);
-
+	      int result = user - com;
+	      int win = 0, draw = 0 , lose = 0;
+	      if(result == -2 || result == 1)
+	    	  win++;
+	      if(result == -1 || result == 2)
+	    	  lose++;
+	      if(result ==0)
+	    	  draw++;
+	      
 	      switch ( user - com ) {
 	      	case 0 : System.out.println("무승부");
 	      	break;
@@ -94,7 +102,9 @@ public class JavaSwitch1 {
 	      	break;
 	      }
 	      
-	      
+	      System.out.println(win);
+	      System.out.println(draw);
+	      System.out.println(lose);
 	      
 	      
 	      

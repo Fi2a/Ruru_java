@@ -16,25 +16,53 @@ public class javaHomework {
 		 */
 		
 		Scanner scan = new Scanner(System.in);
-		int user = 0 , com = 0 , sum = 0;
-		int i = 0;
+		int user = 0 , com = 0, i = 0;
 		do {
 			System.out.print("나 몇개 ? : ");
 			user = scan.nextInt();
 			
 			i += user;
 			
-			if(user==2) {
-				System.out.printf("나 : %d, %d", i-1, i);
+			switch (user) {
+			case 1 : System.out.println("나 : " + i); break;
+			case 2 : System.out.printf("나 : %d, %d \n", i-1, i); break;
+			case 3 : System.out.printf("나 : %d, %d %d\n", i-2, i-1, i); break;		
 			}
-				
-				
 			
+			if(i==31) {
+				System.out.println("유저 패배"); break;
+			}
 			
+			com = (int)(Math.random()*3+1);	
+				
 			i += com;
 			
+			switch (com) {
+			case 1 : System.out.println("컴퓨터 : " + i); break;
+			case 2 : 
+				if(i-2==30 || i-2==29 ) {
+					i-=1; // 30일때 2 입력해서 31 초과 방지, 29일때 2 입력해서 자살 방지
+					System.out.println("컴퓨터 : " + i);
+					break;
+				}
+				System.out.printf("컴퓨터 : %d, %d \n", i-1, i); break;
+			case 3 : 
+				if(i-3==30 || i-3==29) {
+					i-=2; // 30일때 3 입력해서 31 초과 방지
+					System.out.println("컴퓨터 : " + i);
+					break;
+				}
+				
+				System.out.printf("컴퓨터 : %d, %d, %d\n", i-2, i-1, i); break;
+			}
 			
-		} while(sum!=31);
+			if(i==31) {
+				System.out.println("컴퓨터 패배"); break;
+			}
+			
+			
+			
+		} while(i<31);
 		
 		
 
