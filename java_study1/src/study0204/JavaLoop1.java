@@ -69,7 +69,7 @@ public class JavaLoop1 {
 			System.out.printf( "%d*%d = %d \n" ,num, a, num*a );
 		}
 		
-		int coin = Math.random();
+		int coin = (int)(Math.random()*2+1);
 		
 
 	}
