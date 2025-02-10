@@ -119,6 +119,18 @@ public class JavaArray2 {
 		//		 양수 : 뒤의 문자열이 사전적 순서가 앞일 경우  	
 		//		 음수 : 뒤의 문자열이 사전적 순서가 뒤일 경우  	
 		
+		int[] num = new int[] {10,20,30,40,50,60,70,80,90,100};
+		
+		for (int a : num) {
+			System.out.println(a);
+		}
+		
+//		for(int i=0; i < num.length; i++) {
+//			System.out.println( num[i] );
+//		}
+		
+		
+		
 		
 		
 		// 오늘의 과제
