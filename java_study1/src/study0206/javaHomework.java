@@ -29,7 +29,7 @@ public class javaHomework {
 			case 3 : System.out.printf("나 : %d, %d %d\n", i-2, i-1, i); break;		
 			}
 			
-			if(i==31) {
+			if(i>=31) {
 				System.out.println("유저 패배"); break;
 			}
 			
@@ -40,14 +40,14 @@ public class javaHomework {
 			switch (com) {
 			case 1 : System.out.println("컴퓨터 : " + i); break;
 			case 2 : 
-				if(i-2==30 || i-2==29 ) {
+				if(i==32 || i==31 ) {
 					i-=1; // 30일때 2 입력해서 31 초과 방지, 29일때 2 입력해서 자살 방지
 					System.out.println("컴퓨터 : " + i);
 					break;
 				}
 				System.out.printf("컴퓨터 : %d, %d \n", i-1, i); break;
 			case 3 : 
-				if(i-3==30 || i-3==29) {
+				if(i==33 || i==32) {
 					i-=2; // 30일때 3 입력해서 31 초과 방지
 					System.out.println("컴퓨터 : " + i);
 					break;
@@ -56,7 +56,7 @@ public class javaHomework {
 				System.out.printf("컴퓨터 : %d, %d, %d\n", i-2, i-1, i); break;
 			}
 			
-			if(i==31) {
+			if(i>=31) {
 				System.out.println("컴퓨터 패배"); break;
 			}
 			

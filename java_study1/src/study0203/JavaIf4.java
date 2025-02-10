@@ -9,7 +9,7 @@ public class JavaIf4 {
 		Scanner scan = new Scanner(System.in);
 		
 //		Math.random() 은 0.0000 ~ 부터 0.99999 ~ 까지 이다.
-//		곱하기 계산과 더하기 계산으로 범위를 지정 할ㄹ 수 있다.
+//		곱하기 계산과 더하기 계산으로 범위를 지정 할 수 있다.
 		
 //		int num = (int)(Math.random()*10)+1;
 //		

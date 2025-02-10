@@ -10,15 +10,15 @@ public class JavaLoop2 {
 	public static void main(String[] args) {
 		
 		
-		int a = 1;			
-		for(int i=2; i<=9; ) {
-			System.out.printf("%d * %d = %d \n",i , a , a*i);
-			a++;
-			if(a==10) {
-				i++;
-				a=1;
-			}
-		}
+//		int a = 1;			
+//		for(int i=2; i<=9; ) {
+//			System.out.printf("%d * %d = %d \n",i , a , a*i);
+//			a++;
+//			if(a==10) {
+//				i++;
+//				a=1;
+//			}
+//		}
 		
 		
 		
@@ -29,12 +29,12 @@ public class JavaLoop2 {
 //		}		
 		
 		
-//		for (int i=1; i <= 5; i++) {
-//			System.out.println("변수 i 사용 반복문" + i);
-//			for(int k = 1; k <=3; k++) {
-//				System.out.println("   변수 k 사용" + k);
-//			}
-//		}		
+		for (int i=1; i <= 5; i++) {
+			System.out.println("변수 i 사용 반복문" + i);
+			for(int k = 1; k <=3; k++) {
+				System.out.println("   변수 k 사용" + k);
+			}
+		}		
 		
 		
 //		int num = 0;
