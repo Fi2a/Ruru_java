@@ -107,23 +107,23 @@ public class JavaArray2 {
 //		else 
 //			System.out.println("다른 이름");
 		
-		String name1 = "주동건";
-		String name2 = "이동건";
-		if( name1.equals(name2) ) // 문자열 비교 ( true || false ) 
-			System.out.println("같은 이름");
-		else
-			System.out.println("다른 이름");
-		
-		System.out.println( name1.compareTo(name2) );
-		// compareTo : 0 이라면 두 문자열 동일
-		//		 양수 : 뒤의 문자열이 사전적 순서가 앞일 경우  	
-		//		 음수 : 뒤의 문자열이 사전적 순서가 뒤일 경우  	
-		
-		int[] num = new int[] {10,20,30,40,50,60,70,80,90,100};
-		
-		for (int a : num) {
-			System.out.println(a);
-		}
+//		String name1 = "주동건";
+//		String name2 = "이동건";
+//		if( name1.equals(name2) ) // 문자열 비교 ( true || false ) 
+//			System.out.println("같은 이름");
+//		else
+//			System.out.println("다른 이름");
+//		
+//		System.out.println( name1.compareTo(name2) );
+//		// compareTo : 0 이라면 두 문자열 동일
+//		//		 양수 : 뒤의 문자열이 사전적 순서가 앞일 경우  	
+//		//		 음수 : 뒤의 문자열이 사전적 순서가 뒤일 경우  	
+//		
+//		int[] num = new int[] {10,20,30,40,50,60,70,80,90,100};
+//		
+//		for (int a : num) {
+//			System.out.println(a);
+//		}
 		
 //		for(int i=0; i < num.length; i++) {
 //			System.out.println( num[i] );
@@ -139,7 +139,84 @@ public class JavaArray2 {
 		// 15개 전부 저장되면 배열 출력하시오
 		// 숫자 중복 상관 없음 (중복도 없이 해보기) 
 		
+//		int[] num = new int[15];
+//	
+//	
+//		for (int i = 0; i < num.length; i++) {
+//			
+//			for ( int a = 1 ; a <= 15; a++ ) {
+//				int rnd = (int)(Math.random()*25+1)*2;
+//				
+//				num[i] = rnd;
+//			}
+//			
+//			
+//		}
+//	
+//		for (int a : num) System.out.println(a);
 		
+		
+//		int[] num = new int[15];
+//		
+//		
+//		for (int i = 0; i < num.length; i++) {
+//					
+//			num[i] = (int)(Math.random()*25+1)*2; // 50까지의 짝수 랜덤
+//				
+//		}
+//		
+//		for (int a : num) System.out.println(a);
+
+						
+		int[] num = new int[15];
+		
+		int idx = 0;
+				
+		while (true) {
+			int temp = (int)(Math.random()*50+1);
+			if( temp % 2 == 0) {
+				boolean isSame = false ; // 같으면 true, 다르면 false
+				for (int i = 0; i < idx; i++) {
+					if ( num[i] == temp ) {
+						isSame = true;
+					}
+				}
+				if ( !isSame )
+				num[idx++] = temp;
+			}
+			if(idx == num.length) break;
+		}
+						
+		for (int a : num) System.out.println(a);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		int[] num = new int[15];
+//	
+//	
+//		for (int i = 0; i < num.length; i++) {
+//			
+//			num[i] = (int)(Math.random()*25+1)*2;
+//			
+//			for (int s = 0; s < i; s++) {
+//				
+//				if(num[i] == num[s]) {
+//					
+//					System.out.println("wndqhr");
+//					
+//				}
+//				
+//			}
+//			
+//		}
+//	
+//		for (int a : num) System.out.println(a);
 		
 		
 		
