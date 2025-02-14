@@ -139,6 +139,7 @@ public class JavaArray2 {
 		// 15개 전부 저장되면 배열 출력하시오
 		// 숫자 중복 상관 없음 (중복도 없이 해보기) 
 		
+<<<<<<< HEAD
 //		int[] num = new int[15];
 //	
 //	
@@ -155,6 +156,59 @@ public class JavaArray2 {
 //	
 //		for (int a : num) System.out.println(a);
 		
+=======
+//	int[] num = new int[15];
+//	
+//	
+//	for (int i = 0; i < num.length; i++) {
+//		
+//		for ( int a = 1 ; a <= 15; a++ ) {
+//			int rnd = (int)(Math.random()*25+1)*2;
+//			
+//			num[i] = rnd;
+//		}
+//		
+//		
+//	}
+//	
+//	for (int a : num) System.out.println(a);
+	
+	
+	int[] num = new int[15];
+	
+	
+	for (int i = 0; i < num.length; i++) {
+				
+		num[i] = (int)(Math.random()*25+1)*2;
+			
+	}
+	
+	for (int a : num) System.out.println(a);
+
+	
+	
+	
+//	int[] num = new int[15];
+//	
+//	
+//	for (int i = 0; i < num.length; i++) {
+//		
+//		num[i] = (int)(Math.random()*25+1)*2;
+//		
+//		for (int s = 0; s < i; s++) {
+//			
+//			if(num[i] == num[s]) {
+//				
+//				System.out.println("wndqhr");
+//				
+//			}
+//			
+//		}
+//		
+//	}
+//	
+//	for (int a : num) System.out.println(a);
+>>>>>>> branch 'main' of https://github.com/Fi2a/Ruru_java.git
 		
 //		int[] num = new int[15];
 //		
