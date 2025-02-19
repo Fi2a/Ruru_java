@@ -30,12 +30,39 @@ public class ClassArray {
 //			System.out.println(members[i].age);
 //		}
 		
-		Member info = new Member();
+		
+		/*
+ 			영화제목, 장르, 관객수, 개봉년도
+ 	
+ 			위 항목의 데이터를 저장 할 수 있는 클래스 정의
+ 			영화 한편에 대한 데이터 입력하고 출력까지
+ 	
+		 */
 		
 		
 		
+//		Movie movie = new Movie();
+//		
+//		movie.title = "비긴어게인";
+//		movie.gerne = "드라마";
+//		movie.viewer = 4500000;
+//		movie.year = 2010;
+//		
+////		System.out.printf("%d , %d , %d , %d",movie.title, movie.gerne, movie.viewer, movie.date);
+//		System.out.println("제목 : " + movie.title + ", 장르 : " + movie.gerne + ", 관객 수 : " + movie.viewer + ", 개봉년도 : " + movie.year);
 		
 		
+//		Member info = new Member();
+//		System.out.println(info);
+//		System.out.println(info.name);
+//		
+//		
+//		Member m1 = new Member();
+//		System.out.println(m1.name);
+		
+		Member info = new Member(20, "군인", "김민재");
+		
+		System.out.println(info.name);
 		
 		
 		
@@ -45,3 +72,6 @@ public class ClassArray {
 	}
 
 }
+
+
+
