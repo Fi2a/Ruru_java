@@ -4,6 +4,18 @@ public abstract class Fruit { // 부모 클래스 - 추상클래스
 	protected int cost; // 판매 가격
 	protected int capacity; // 용량
 	
+	public int getCost() {
+		return cost;
+	}
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+	public int getCapacity() {
+		return capacity;
+	}
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
 	protected Fruit() {}
 	protected Fruit(int c, int cp) {
 		this.cost=c;

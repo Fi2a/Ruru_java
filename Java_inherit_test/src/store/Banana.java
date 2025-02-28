@@ -19,6 +19,6 @@ public void pieceFruit() {
 @Override
 public String toString() {
 	return ("바나나 "+this.cost +
-			" " + this.capacity); 
+			"원 " + this.capacity+"ml"); 
 }
 }
