@@ -11,6 +11,8 @@ public class MainMt {
 		
 		t.a.num = 10; 		//  내부클래스가 노출됨
 		
+		t.setYear(100);
+		
 		// 정적 내부클래스를 노출하면서 객체 만들기
 		Test.Dog dof = new Test.Dog();
 		

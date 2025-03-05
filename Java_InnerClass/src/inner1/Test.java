@@ -5,6 +5,7 @@ public class Test {
 	static int count = 1 ;	// 클래스변수 (정적변수)
 	int age ;				// 인스턴스변수
 	A a;
+	static Dog d;
 	
 	Test(){
 		a = new A();
@@ -13,10 +14,16 @@ public class Test {
 	static void origin() { // 클래스 메서드
 //		a.view();  			클래스 메서드에서 
 //		A bb = new A();		내부클래스를 실행하면 오류
+		
 	}
 	// 정적 내부 클래스 (static)
 	static class Dog{
 		int year;
+	}
+	
+	void setYear(int year) {
+		d = new Dog();
+		d.year=year;
 	}
 	
 	// 인스턴스 내부클래스 정의 - 외부클래스의 객체 생성해야 사용
@@ -43,6 +50,17 @@ public class Test {
 
 
 // 내부클래스 - 클래스 내부에 만드는 클래스
+// 내부 클래스는 여러개의 클래스와 관계를 맺는게 아니라  하나의 클래스와
+// 상속 또는 포함 관계를 맺을 경우에 사용하면 효과적이다.
+
+// 인스턴스 내부 클래스 -  외부 클래스 객체를 생성하고 사용
+// 정적 내부클래스 ( static ) - 외부 클래스 객체 없이 사용가능
+//							외부클래스의 static 메서드를 이용해서 객체 생성 및 사용 권장
+// 지역 내부 클래스 - 메서드 내부에 클래스를 정의하고
+//				  해당 메서드 내부에서만 사용가능
+// 익명 내부 클래스 - 이름이 없는 클래스
+//				  메서드를 오버라이딩 하여 사용
+
 
 /*
  		static 변수 또는 메서드
