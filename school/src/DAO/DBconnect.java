@@ -1,4 +1,4 @@
-package collection3;
+package DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,12 +6,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DBConnect {
+public class DBconnect {
 	protected Connection conn;
 	protected Statement st;
 	protected ResultSet rs;
 	
-	protected DBConnect() {
+	protected DBconnect() {
 		connection();
 	}
 	private void connection() {
