@@ -29,8 +29,17 @@ public class MainMt {
 				new Dino("스테고사우루스", 7)
 		};
 		
-		Create device1 = new Create();
-		device1.start();
+		// 알 갯수만큼 스레드 만들기
+		Create[] device = new Create[알.length];
+		for( int i = 0; i < 알.length; i++ ) {
+			device[i] = new Create();
+		}
+		
+		device[0].start();
+		device[1].start();
+		device[2].start();
+		device[3].start();
+		
 		// 부화 시킬 공룡을 선택해 부화를 진행한다
 		// 스레드를 통해 각 공룡별 시간만큼 동작하도록 한다
 		Scanner sc = new Scanner(System.in);
@@ -39,7 +48,16 @@ public class MainMt {
 			System.out.print("1~4 중 하나 : ");
 			int select = sc.nextInt();
 			
+			System.out.println( (i+1) + "번 부화장치 가동"  );
+			
 			Create.hatch( 알[select-1] );
+			
+			System.out.println("계속 ? ( 1 - 계속 ) : ");
+			int sel =sc.nextInt();
+			if( sel != 1 ) {
+				break;
+			}
+			
 		}
 		
 		

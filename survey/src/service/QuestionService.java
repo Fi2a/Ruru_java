@@ -24,9 +24,15 @@ public class QuestionService {
 			System.out.println(ques.getId() + "번 질문 : " + ques.getQuestion());
 			System.out.print("번호 입력 : ");
 			ans();
+			
+		
 //			int num = sc.nextInt();
 			
-		}		
+		}	
+		
+		Survey test = new Survey(1, "질문");
+		
+		
 		
 		System.out.println("\n 설문 끝!");
 	}
