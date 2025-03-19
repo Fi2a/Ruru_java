@@ -6,6 +6,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import service.BoardService;
+
 import java.io.IOException;
 
 /**
@@ -14,6 +16,8 @@ import java.io.IOException;
 public class BoardController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
+	private BoardService bs;
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -26,7 +30,7 @@ public class BoardController extends HttpServlet {
 	 * @see Servlet#init(ServletConfig)
 	 */
 	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
+		bs = new BoardService();
 	}
 
 	/**
@@ -56,10 +60,14 @@ public class BoardController extends HttpServlet {
 		
 		if ( cmd.equals("list") ) { // 게시판 목룍 페이지 요청 - /jsp2/board/list
 			view += "list.jsp";
+			bs.allSelect(request);
 		}else if( cmd.equals("write") ) { // 게시판 작성 페이지 요청 - /jsp2/board/write
 			view += "write.jsp";
 		}else if( cmd.equals("save") ) { // 게시판 저장 요청 - /jsp2/board/save
 			view = null;
+			
+			bs.save(request);
+			
 		}
 		
 		if( view != null ) {
@@ -75,9 +83,9 @@ public class BoardController extends HttpServlet {
 		
 		
 		// getRequestDispatcher() 메서드 안에 보여줄 페이지를 모든경로 작성
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/board/list.jsp");
-		rd.forward(request, response);
-		
+//		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/board/list.jsp");
+//		rd.forward(request, response);
+			
 	}
 	
 }

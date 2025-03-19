@@ -18,7 +18,7 @@
 		String user = "Ruru";
 		String pw = "1234";
 		
-		DriverManager.getConnection(getConnection(url, user, pw);
+		DriverManager.getConnection(url, user, pw) ;
 				
 	} catch(Exception e){
 		System.out.println("드라이버 로드 실패");
